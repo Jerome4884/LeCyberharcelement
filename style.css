@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+/*NavBar*/
+.center, .center-column, .top, .right, .bottom, .left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center-column{
+    flex-direction: column;
+}
+.top {align-items: flex-start;}
+.right {justify-content: flex-end;}
+.bottom {align-items: flex-end;}
+.left {justify-content: flex-start;}
+@media screen and (max-width: 768px) {
+    .desktop{
+        display: none;
+    }
+}
+
+#navBar{
+    background-color: #d4cac170;
+}
+#logo {
+    /* height: auto; */
+    width: 5rem;
+}
+#social, p{
+    display: flex;
+    align-items: center;
+    margin-left: 25vh;
+
+}
+#elementMenu, a{
+    text-decoration: none;
+  
+}
+#menu:hover{
+    background-color: #d4cac170 ;
+}
+
+/* @media screen and (max-width:768px){
+    #navBar{
+        max-height: 2rem;
+    }
+    #logo{
+        width: 2rem;       
+    }
+    #burger, a{
+        position: absolute;
+        left: 0;
+    }
+} */
+/*home*/
+.imgFond{
+    background-image: url("assets/background2.jpg");
+    background-size: cover;
+} 
+#LOGO-AEGIS-CIVIS{
+    height: auto;
+    width: 500px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -145px;
+}
+@media screen and (max-width: 768px){
+    #LOGO-AEGIS-CIVIS{
+        margin-top: -100px;
+        width: 250px;
+    }
+    .imgFond{
+        background: url('assets/backgroundMobile.png');
+        background-size: cover;
+    }
+}
+/* #navAccueil{
+    background-color: #d4cac1f4;
+} */
+
+/* Page sommaire*/
+#sommaire, a {
+    
+    color: #29478B;
+}
+#sommaire, #boxSummary:hover{
+    color: #29478B;
+    
+}
+#boxSummary{
+    background-color: #d4cac198;
+   
+}
+#containerFirst{
+    margin: auto;
+}
+#containerSecond{
+    color: #29478B;
+    font-family: josefin sans;
+    margin-top: 6vh;
+}
+@media screen and (max-width: 1024px){
+    #containerFirst{
+        background: url('assets/backgroundMobile.png');
+        background-size: cover; height: 100%;
+    }
+    #sommaire{
+        text-align: center;
+    }
+    #boxSummary{
+        font-size: 1.5vh;
+        text-align: center;
+    }
+}
+/* Pages présentation*/
+
+#bkgPres{
+    background: url("/assets/PrésentationCyber-harcèlement-2.png");
+}
+#titre{
+    color: #29478B;
+    font-family: paytone one;
+}
+#text{
+    color: #29478B;
+    font-family: josefin sans;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.parallelogram {
+    width: 100%;
+    height: 100%;
+    background-color: #B2BCCF;
+    transform: skewX(-25deg);
+    border: #29478B solid 2px;
+    box-shadow: 10px 10px 1px ;
+    padding-bottom: 20px;
+}
+#img{
+    width: 300px;
+    border-radius: 30% 20% 40% 50%;
+    border: #3861c1 solid 2px;
+    box-shadow: 10px 10px 1px ;
+}
+
+#boxLaw{
+    background-image: url("assets/UnknownP.jpeg");
+}
+#boxLaw p{
+    color: #29478B;
+
+}
+#question{
+    transform: rotate(30deg);
+}
+li{
+    color: #29478B;
+    font-weight: bold;
+}
+li:hover{
+    background: linear-gradient(
+    45deg,
+    rgb(65, 88, 208) 0%,
+    #d4cac198 46%,
+    rgb(255, 204, 112) 100%
+  );
+}
+@media screen and (max-width:768px){
+    #background{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+    }
+    #titre{
+        font-size: 3.5vh;
+    }
+    #text{
+        font-size: 2.5vh;
+        text-align: justify;
+    }
+    #hero-body-pres{
+        display: flex;
+        flex-direction: column;
+    }
+    #img1, #img{
+        visibility: hidden;
+    }
+    .cloud, li{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+}
+/*page a propos*/
+#bodyPropos{
+    margin-top: 10vh;
+}
+#titreApropos, a{
+    font-family: paytone one;
+    color: whitesmoke;
+    text-decoration: underline;
+    
+}
+
+a:hover{
+    color: #B2BCCF;
+}
+#textApropos{
+    font-family: josefin sans;
+    color: whitesmoke;
+}
+#boxPropos{
+    background-color: #B2BCCF;
+}
+/*Contact*/
+#contentContact{
+    display: flex;
+    flex-direction: column;
+}
+
+#containerContact{
+    margin-top: 15vh;
+    padding-left: 20vh;
+}
+/* .hero{ 
+background: black url("assets/background2.jpg") center / cover;
+} 
+
+@media (max-width:2560px) { .hero {background: black url("assets/background2.jpg") center / cover;}}
+@media (max-width:768px) { .hero {background: black url("assets/background2.jpg") center / cover;}} */
+
+/*Quiz*/
+#bkgQuiz{
+    background: url("assets/PrésentationCyber-harcèlement-2.png");
+}
+#bkgBis{
+    background: url("assets/PrésentationCyberharcèlementBis.png") center / cover;
+}
+.rond{
+    background-color: bisque;
+    border-radius: 50%;
+}
+/*Footer*/
+#foter{
+    background-color: #d4cac170;
+}
+#logoFooter{
+    height: auto;
+    width: 7rem;
+}
+
+@media screen and (max-width: 768px){
+    #foter, #contentFoot{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #29478B;
+    }
+}
+
+.div-border {
+    border-color: red;
+    width: 500px;
+    height: 500px;
+    border-width: 5px;
+    border: solid;
+}
