@@ -7,3 +7,5 @@
 # I used the Bulma framework and Bootstrap for the html/css part. 
 
 # The back-end is in native php.
+
+# This project is not yet complete
