@@ -1,3 +1,6 @@
+/* saas link bulma */
+@import "bulma/sass/utilities/_all.sass";
+
 * {
     margin: 0;
     box-sizing: border-box;
@@ -28,12 +31,12 @@
     /* height: auto; */
     width: 5rem;
 }
-#social, p{
-    display: flex;
-    align-items: center;
-    margin-left: 25vh;
+    /* #social, p{
+        display: flex;
+        align-items: center;
+        margin-left: 25vh;
 
-}
+    } */
 #elementMenu, a{
     text-decoration: none;
   
@@ -54,6 +57,7 @@
         left: 0;
     }
 } */
+
 /*home*/
 .imgFond{
     background-image: url("assets/background2.jpg");
@@ -68,15 +72,19 @@
     margin-top: -145px;
 }
 @media screen and (max-width: 768px){
-    #LOGO-AEGIS-CIVIS{
+    /* #LOGO-AEGIS-CIVIS{
         margin-top: -100px;
         width: 250px;
-    }
+    } */
+    /* .logo{
+        
+    } */
     .imgFond{
-        background: url('assets/backgroundMobile.png');
+        background-image: url("assets/backgroundMobile.png");
         background-size: cover;
     }
 }
+
 /* #navAccueil{
     background-color: #d4cac1f4;
 } */
@@ -94,9 +102,9 @@
     background-color: #d4cac198;
    
 }
-#containerFirst{
+/* #containerFirst{
     margin: auto;
-}
+} */
 #containerSecond{
     color: #29478B;
     font-family: josefin sans;
@@ -115,30 +123,43 @@
         text-align: center;
     }
 }
+
 /* Pages présentation*/
 
-#bkgPres{
-    background: url("/assets/PrésentationCyber-harcèlement-2.png");
-}
+/* #bkgPres{
+    background-image: url("/assets/PrésentationCyber-harcèlement-2.png");
+} */
 #titre{
     color: #29478B;
     font-family: paytone one;
+    text-decoration: underline;
 }
 #text{
+    /* background-color: #F3FAFD; */
     color: #29478B;
     font-family: josefin sans;
+    font-weight: bold;
     margin-top: 30px;
     margin-left: 10px;
     margin-right: 10px;
 }
-.parallelogram {
-    width: 100%;
+#PresBkg{
+    background-image: url("assets/PrésentationCyber-harcèlement-2.png");
+    background-size: cover;
+}
+.parallelogram1 {
+    width: 95%;
     height: 100%;
     background-color: #B2BCCF;
     transform: skewX(-25deg);
     border: #29478B solid 2px;
     box-shadow: 10px 10px 1px ;
     padding-bottom: 20px;
+    margin-left: 29px;
+}
+.noParallelogram1 {
+    display: none;
+    border: #3861c1, solid, 2px;
 }
 #img{
     width: 300px;
@@ -149,17 +170,36 @@
 
 #boxLaw{
     background-image: url("assets/UnknownP.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-#boxLaw p{
+#boxLaw, li{
     color: #29478B;
+    font-size: 55px;
 
 }
 #question{
     transform: rotate(30deg);
 }
+ul {
+    list-style-type: none;
+}
 li{
     color: #29478B;
     font-weight: bold;
+}
+li, .nothing{
+    color: #29478B;
+    font-weight: bold;
+
+}
+/* .nothing:hover{
+    background: linear-gradient(
+    45deg,
+    rgb(65, 88, 208) 0%,
+    #d4cac198 46%,
+    rgb(255, 204, 112) 100%
+);
 }
 li:hover{
     background: linear-gradient(
@@ -168,7 +208,7 @@ li:hover{
     #d4cac198 46%,
     rgb(255, 204, 112) 100%
   );
-}
+} */
 @media screen and (max-width:768px){
     #background{
         display: flex;
@@ -179,7 +219,7 @@ li:hover{
         font-size: 3.5vh;
     }
     #text{
-        font-size: 2.5vh;
+        font-size: 4vh;
         text-align: justify;
     }
     #hero-body-pres{
@@ -189,14 +229,29 @@ li:hover{
     #img1, #img{
         visibility: hidden;
     }
-    .cloud, li{
+    /* .cloud, li{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    } */
+    .parallelogram1 {
+        display: none;
+    }
+    .noParallelogram1 {
+        display: block;
+        border: #3861c1, solid, 2px;
+    }
 
+    .parallelogram {
+        display: none;
+    }
+    .noParallelogram {
+        display: block;
+        border: #3861c1, solid, 2px;
     }
 }
+
 /*page a propos*/
 #bodyPropos{
     margin-top: 10vh;
@@ -207,7 +262,6 @@ li:hover{
     text-decoration: underline;
     
 }
-
 a:hover{
     color: #B2BCCF;
 }
@@ -218,12 +272,12 @@ a:hover{
 #boxPropos{
     background-color: #B2BCCF;
 }
+
 /*Contact*/
 #contentContact{
     display: flex;
     flex-direction: column;
 }
-
 #containerContact{
     margin-top: 15vh;
     padding-left: 20vh;
@@ -246,23 +300,25 @@ background: black url("assets/background2.jpg") center / cover;
     background-color: bisque;
     border-radius: 50%;
 }
+
 /*Footer*/
 #foter{
     background-color: #d4cac170;
+    color: #3c352d70;
 }
 #logoFooter{
     height: auto;
     width: 7rem;
 }
 
-@media screen and (max-width: 768px){
+/* @media screen and (max-width: 768px){
     #foter, #contentFoot{
         display: flex;
         justify-content: space-between;
         align-items: center;
         color: #29478B;
     }
-}
+} */
 
 .div-border {
     border-color: red;

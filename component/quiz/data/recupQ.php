@@ -35,7 +35,6 @@ Puis lui afficher ces reponses ainsi qu'un score. -->
 <?php
 
 // Create function to connect with the bd
-
 function connecDb() {
     try {
         return new PDO('mysql:host=localhost;dbname=cyberharcelement;charset=utf8', 'root', '');
@@ -63,7 +62,6 @@ function getQuest($quizId) {
         $sqlGetAnswer = "SELECT a.answer_id AS id, a.answer AS label, a.goodAnswer
             FROM answer AS a
             WHERE a.question_id = :questionId;";
-
         $queryGetAnswer = $db->prepare($sqlGetAnswer);
         $queryGetAnswer->execute(
             ['questionId' => $questions->question_id]

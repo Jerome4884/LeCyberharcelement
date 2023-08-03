@@ -20,25 +20,41 @@
             require_once('model/question.php');
             require_once('model/answer.php');
             require_once('data/recupQ.php');
+
+
+
+// Récupère le quiz avec l'ID 1 en utilisant la fonction getQuiz() du fichier recupQ.php
             $quiz = getQuiz(1);
+// Initialisation de l'index des questions à 1
             $questionIndex = 1;
             ?>
+<!-- Formulaire pour soumettre les réponses du quiz -->
                 <form method="post" action="?routing=quizOne&send=<?= $quiz->getId() ?>">
                     <div class="column is-centered" id="quiz">
-                        <?php foreach ($quiz->getQuest() as $question) {
+                        <?php 
+// Boucle pour afficher toutes les questions du quiz
+                        foreach ($quiz->getQuest() as $question) {
                         ?>
-                            <div class="question" style="display: none;">
+<!-- Div pour afficher une question à la fois, display: none; pour cacher les questions-->
+                            <div class="question" id="title" style="display: none;">
                                 <div class="rond">
-                                    <h4 class="subtitle has-text-centered">Question <?= $questionIndex ?></h4>
+                                    <!-- Affiche le numéro de la question -->
+                                    <h4 class="subtitle has-text-centered" >Question <?= $questionIndex ?></h4>
                                 </div>
-                                <h1 class="title has-text-centered mt-5"><?= $question->getLabelQuestion()?></h1>
-                                <div class="rep">
+                                <!-- Affiche le libellé de la question -->
+                                <h1 class="title has-text-centered mt-5 is-size-5-mobile" id="titre"><?= $question->getLabelQuestion()?></h1>
+                                <div class="rep has-text-centered" id="text">
                                     <?php
+                                    // Boucle pour afficher toutes les réponses possibles pour cette question
                                     foreach ($question->getAnswers() as $answer) {
                                     ?>
                                         <div>
                                             <!--Type radio because only one choice is possible-->
+                                            <!-- name de l'input radio est l'ID de la question pour associer la réponse à la question -->
+                                            <!-- value de l'input radio est l'ID de la réponse -->
+                                            <!--L'attribut "required" rend l'input radio obligatoire -->
                                             <input type="radio" name="<?= $question->getId() ?>" id="question-<?= $question->getId() ?>-answers-<?= $answer->getId() ?>" value="<?= $answer->getId() ?>" required="required" />
+                                            <!-- Affiche le libellé de la réponse -->
                                             <label for="question-<?= $question->getId() ?>-answers-<?= $answer->getId() ?>"><?= $answer->getAnswerLabel() ?></label>
                                         </div>
                                     <?php
@@ -47,6 +63,7 @@
                                 </div>
                             </div>
                     <?php
+                    // Incrémente l'index des questions pour afficher le numéro de la prochaine question
                     $questionIndex ++;
                         }
                     ?>

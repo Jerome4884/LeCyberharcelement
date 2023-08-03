@@ -26,35 +26,126 @@
     // }
     // 
     ?>
- <section id="containerFirst" class="hero is-fullwidth-with-navbar is-flex is-align-items-center is-justify-content-center imgFond"><!--style="background-image: url('/Applications/MAMP/htdocs/Projet-web-cyberharcelement/hero/assets/background2.jpg');  background-size: cover; height: 100%;"-->
-     <div class="hero-body" id="containerSecond">
-         <div class="section">
-             <h1 id="text" class="title is-2 has-text-white-bis has-text-centered">
-                 Sommaire
-             </h1>
-             <div class="content has-text-white-bis has-text-centered" id="sommaire">
 
-                 <div id="boxSummary" class="box"><a href="#le-cyber-harcelement-c-est-quoi">Le cyberharcèlement, c'est quoi?</a></div>
-                 <div id="boxSummary" class="box"><a href="#comment-le-deceler">Comment le déceler?</a></div>
-                 <div id="boxSummary" class="box"><a href="#s-en-premunir">Que faire pour s'en prémunir?</a></div>
-                 <div id="boxSummary" class="box"><a href="#consequences">Quelles sont les conséquences?</a></div>
-                 <div id="boxSummary" class="box"><a href="#pas-devenir">Et pour ne pas le devenir</a></div>
-                 <div id="boxSummary" class="box"><a href="#loi">Que dit la loi</a></div>
-                 <div id="boxSummary" class="box"><a href="#parler">A qui en parler?</a></div>
-                 <div id="boxSummary" class="box"><a href="Présentation.html#3018">Le 3018</a></div>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=10">
+    <!-- lien bulma -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <!--Lien style css-->
+    <?php echo '<link rel="stylesheet" type="text/css" href="style.css">' ?>
+    <link rel="stylesheet" href="style.css">
+    <!--Lien script js-->
+    <!-- <?php // echo "<script src='index.js'></script>" ?>
+    <script>
+        let js = "<//?php echo $js; ?>";
+        console.log(js);
+    </script> -->
+    <!--Lien googleFont-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Paytone One">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin Sans">
+    <!--Lien icon fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Accueil</title>
+</head>
+<body style="background-color: #d4cac170;">
+<header>
+    <!--Navigation-->
+        <nav class="navbar" role="navigation" aria-label="main navigation" style="background-color: #d4cac170;">
+            <div class="navbar-brand">
+                    <figure class="image is-128x128 ml-3 logo">
+                        <a href="https://www.aegis-civis.com"><img src="assets/LOGO AEGIS.png" alt="logo"></a>
+                    </figure>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                </a>
+            </div>
 
-             </div>
-         </div>
-     </div>
- </section>
- <section>
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start ml-6">
+                    <a class="navbar-item" type="button" style="text-decoration: none; color: #29478B;" a href="." >
+                    Accueil
+                    </a>
+
+                    <a class="navbar-item" type="button" style="text-decoration: none; color: #29478B;" href="?routing=SumPres">
+                    Présentation
+                    </a>
+
+                    <!-- <div class="navbar-item has-dropdown is-hoverable"> -->
+                        <a class="navbar-item" type="button" style="text-decoration: none; color: #29478B;" href="?routing=quizPresentation">
+                        Quiz
+                        </a>
+
+                        <!-- <div class="navbar-dropdown"> -->
+                        <a class="navbar-item" type="button" style="text-decoration: none; color: #29478B;" href="?routing=aPropos">
+                        A propos
+                        </a>
+
+                        <a class="navbar-item" type="button" style="text-decoration: none; color: #29478B;" href="?routing=contact">
+                        Contact
+                        </a>
+        <!-- </div> -->
+      <!-- </div> -->
+    </div>
+
+    <div class="navbar-end mr-3">
+        <div class="navbar-brand" id="social">
+            <p><small>suivez-nous sur les réseaux</small></p>
+            <a href="https://www.linkedin.com/company/aegis-civis/" class="navbar-item"><img src="assets/linkedin.png" alt="linkedin"></a>
+        </div>
+      <div class="navbar-item">
+        <div class="buttons is-rounded is-small">
+          <a class="button is-rounded is-small" href="?routing=login" style="background-color: #29478B; color: white; text-decoration: none;">
+            Se connecter
+          </a>
+          <a class="button is-light is-rounded is-small" href="?routing=disconnect" style="">
+            Se deconnecter
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+</header>
+
+<section id="containerFirst" class="hero is-fullwidth-with-navbar is-flex is-align-items-center is-justify-content-center imgFond"><!--style="background-image: url('/Applications/MAMP/htdocs/Projet-web-cyberharcelement/hero/assets/background2.jpg');  background-size: cover; height: 100%;"-->
+    <div class="hero-body" id="containerSecond">
+        <div class="container">
+            <div class="columns">
+                <div class="column">
+                    <h1 id="text" class="title is-2 has-text-white-bis has-text-centered">
+                        Sommaire
+                    </h1>
+                    <div class="content has-text-white-bis has-text-centered" id="sommaire">
+
+                        <div id="boxSummary" class="box"><a href="#le-cyber-harcelement-c-est-quoi">Le cyberharcèlement, c'est quoi?</a></div>
+                        <div id="boxSummary" class="box"><a href="#comment-le-deceler">Comment le déceler?</a></div>
+                        <div id="boxSummary" class="box"><a href="#s-en-premunir">Que faire pour s'en prémunir?</a></div>
+                        <div id="boxSummary" class="box"><a href="#consequences">Quelles sont les conséquences?</a></div>
+                        <div id="boxSummary" class="box"><a href="#pas-devenir">Et pour ne pas le devenir</a></div>
+                        <div id="boxSummary" class="box"><a href="#loi">Que dit la loi</a></div>
+                        <div id="boxSummary" class="box"><a href="#parler">A qui en parler?</a></div>
+                        <div id="boxSummary" class="box"><a href="Présentation.html#3018">Le 3018</a></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
      <div class="columns-container is-gapless" id="le-cyber-harcelement-c-est-quoi">
          <div class="columns is-centered is-multiline is-full is-gapless">
              <div class="column is-full is-offset-x">
                  <section class="hero is-fullheight-with-navbar" id="" style="background-color: #F3FAFD;">
                     <div class="hero-body" id="">
                         <figure class="image">
-                            <img class="is-rounded" style="max-width: 300px;" src="./assets/composition-cyber-intimidation-isometrique-messages-emoticones-pour-ordinateur-portable-mains-humaines-pointant-vers-quelqu-fond-bleu-illustration-vectorielle-3d_1284-69106.jpg.avif" alt="mains-humaines-pointant-vers-une-personne-fond-bleu">
+                            <img class="is-rounded" style="max-width: 300px;" src="./assets/composition-cyber-intimidation.jpg.avif" alt="mains-humaines-pointant-vers-une-personne-fond-bleu">
                         </figure>
                         <div class="container has-text-centered" id="container">
                              <div class="cloud" style="background-color: bisque; border-radius: 10% 20% 40% 50% / 50% 30% 30% 60%; padding: 10px; text-align: center;">
@@ -159,8 +250,8 @@
                  <div class="hero-body">
                      <div class="container has-text-centered" id="container">
                          <h1 class="title is-1 has-text-centered" id="titre">Que faire pour s'en prémunir?</h1>
-                         <!--Création d'un parallelogramme-->
-                         <div class="parallelogram">
+                         <!--Création d'un parallelogramme / <div class="parallelogram">-->
+                         <div >
                              <p class="subtitle is-5" id="text">Il existe plusieurs manières de s'en prémunir :
                                  Configurer ses comptes de manière à laisser passer le moins d'informations sensibles possibles.
                                  Masquer les contenus violents.

@@ -2,8 +2,8 @@
 
 $host = 'localhost';
 $dbname = 'cyberharcelement'; /*Mettre nom de la bd */
-$dbuser = 'root'; /*Mettre nom utilisateur de la bd, est ce le meme? */
-$dbpwd  = '';   /*Mettre pwd de la bd, en general il n'y en a pas. Est ce la meme? */
+$dbuser = 'root'; /*Mettre nom utilisateur de la bd */
+$dbpwd  = '';   /*Mettre pwd de la bd */
 
 try {
     $db = new PDO('mysql:host=localhost;dbname='.$dbname.';charset=utf8', $dbuser, $dbpwd);

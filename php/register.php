@@ -1,25 +1,31 @@
 <?php
+// Fait la connexion a la page de connexion, necessaire pour la suite
 require_once("connexionBd.php");
 
-if (isset($_POST['submit']) && !empty($_POST['name']) && !empty($_POST['password']) && !empty($_POST['city']) && !empty($_POST['postal-code']) && !empty($_POST['email'])) {
+// Vérification si les champs demandés dans le formulaire sont bien renseignés
+if (isset($_POST['submit']) && !empty($_POST['name']) && !empty($_POST['password']) && !empty($_POST['city'])
+     && !empty($_POST['postal-code']) && !empty($_POST['email'])) {
 
+// Définition des variables, trim permet de supprimer les espaces
     $userN = trim($_POST['name']);
     $mail = trim($_POST['email']);
     $city = trim($_POST['city']);
     $zip = trim($_POST['postal-code']);
 
-    $sqlUsername = "SELECT `name`, `password` FROM `user` WHERE `name` = :user";
-    $queryUsername = $db->prepare($sqlUsername);
-    $queryUsername->execute([
-        "user" => $userN,
+// Permet de vérifier si name et pwd existe déjà 
+    $sqlUsername = "SELECT `name`, `password` FROM `user` WHERE `name` = :user"; // requete pour récuperer name et pwd
+    $queryUsername = $db->prepare($sqlUsername); // prépare la requete
+    $queryUsername->execute([   // execute la requete
+        "user" => $userN, // associe user à userN, ceci permet d'éviter les attaques par injections sql
     ]);
-    $user = $queryUsername->fetch();
+    $user = $queryUsername->fetch();  // pour récuperer la requete
 
-    if ($user !== false) {
+    if ($user !== false) { // vérifie si user existe, si non on passe à la suite
         echo "<p class='usernameUsed'>Nom d'utilisateur déjà utilisé.</p>";
     } else {
-        $hashedpwd = password_hash($_POST['password'], PASSWORD_DEFAULT);
+        $hashedpwd = password_hash($_POST['password'], PASSWORD_DEFAULT); // hash du pwd si user n'existe pas
 
+    // Insere les donnée renseigné par le user dans la bdd
         $sqlAdd = "INSERT INTO `user`(`name`, `password`, email, city, `zip`) VALUES (:name, :pwd, :mail, :city, :zip)";
         $queryAdd = $db->prepare($sqlAdd);
         $queryAdd->execute([
@@ -70,6 +76,7 @@ if (isset($_POST['submit']) && !empty($_POST['name']) && !empty($_POST['password
         <div class="container">
             <div class="columns is-centered">
                 <div class="column is-half">
+                    <h1 class="title is-3 has-text-centered" id="titre" style="color: white;"><u>Pour mieux vous connaitre  </u></h1>
                     <form action="" method="post" id="myForm">
                         <div class="field">
                             <label class="label">Nom d'utilisateur</label>
@@ -104,7 +111,7 @@ if (isset($_POST['submit']) && !empty($_POST['name']) && !empty($_POST['password
                         <div class="field">
                             <div class="field is-grouped">
                                 <div class="control">
-                                    <input class="button is-primary" type="submit" name="submit" placeholder="Ajouter">
+                                    <input class="button" type="submit" name="submit" placeholder="Ajouter" style="background-color: #29478B; color: white; text-decoration: none;" >
                                 </div>
                                 <div class="control">
                                     <input class="button is-link is-light" onclick="resetForm()" placeholder="annuler">
@@ -118,6 +125,7 @@ if (isset($_POST['submit']) && !empty($_POST['name']) && !empty($_POST['password
     </section>
 </body>
 <script>
+    // fonction pour reset le formulaire rempli au click sur le bouton annuler
     function resetForm() {
         document.getElementById("myForm").reset();
     }
