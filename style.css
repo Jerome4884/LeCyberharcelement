@@ -25,7 +25,7 @@
 }
 
 #navBar{
-    background-color: #d4cac170;
+    background-color: #d4cac1;
 }
 #logo {
     /* height: auto; */
@@ -303,7 +303,7 @@ background: black url("assets/background2.jpg") center / cover;
 
 /*Footer*/
 #foter{
-    background-color: #d4cac170;
+    background-color: #d4cac1;
     color: #3c352d70;
 }
 #logoFooter{

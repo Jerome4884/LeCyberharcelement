@@ -26,52 +26,28 @@
 
 <body style="background-color: #F3FAFD;">
 
-  <!-- <nav class="navbar navbar-expand-lg navbar" style="background-color: #d4cac170;">
-    <div class="container">
-      <a class="navbar-brand" href="index.php"><img src="assets/LOGO AEGIS.png" alt="logo" width="30%"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
 
-      <div class="collapse navbar-collapse" id="navbarColor02">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href=" . " style="text-decoration: none; color: #29478B;">Accueil<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="?routing=sommairePresentation" style="text-decoration: none; color: #29478B;">Présentation</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="?routing=quizPresentation" style="text-decoration: none; color: #29478B;">Quiz</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="?routing=aPropos" style="text-decoration: none; color: #29478B;">A propos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="?routing=contact" style="text-decoration: none; color: #29478B;">Contact</a>
-          </li>
-        </ul>
-        <div class="container fluid">
-          <a href="?routing=login" style="text-decoration: none; color: #29478B;" class="btn btn-outline-light my-2 my-sm-0">Se connecter</a>
-          <a href="?routing=disconnect" style="text-decoration: none; color: #29478B;" class="btn btn-outline-light my-2 my-sm-0">Se déconnecter</a>
-        </div>
-      </div>
-  </nav> -->
-
-  <!-- sum part -->
-  <div class="py-5" style="background-image: url(assets/PrésentationCyber-harcèlement-2.png); background-size: cover;">
+  <!-- sum part bootstrap-->
+  <div class="py-5 scrollspy" style="background-image: url(assets/PrésentationCyber-harcèlement-2.png); background-size: cover;">
     <main class="container mt-5">
       <div class="text-center" id="text">
         <h2>Sommaire</h2>
       </div>
       <div class="d-flex justify-content-center flex-wrap">
+      <!-- Crée une card avec une marge extérieure -->
         <div class="card m-3" style="width: 15rem;">
+        <!-- Insère une image en haut de la carte -->
           <img class="card-img-top" src="assets/bullying-7902257_1280.png" alt="Card image cap">
+          <!-- Crée le corps de la card avec une disposition flexible en colonne -->
           <div class="card-body d-flex flex-column align-items-center justify-content-center">
+            <!-- Crée un élément centré horizontalement avec le texte centré aussi  -->
             <div class="text-center">
+            <!-- Insère un titre  -->
               <h3 class="card-title"><small>Le cyberharcèlement, c'est quoi?</small></h3>
             </div>
+            <!-- Crée un espace en bas -->
             <div class="mt-auto">
+            <!-- Insère un lien boutton pour acceder à cette partie -->
               <a href="#le-cyber-harcelement-c-est-quoi" class="btn btn-primary mt-4">Voir</a>
             </div>
           </div>
@@ -83,7 +59,7 @@
               <h3 class="card-title"><small>Comment le déceler?</small></h3>
             </div>
             <div class="mt-auto">
-              <a href="#le-cyber-harcelement-c-est-quoi" class="btn btn-primary mt-4">Voir</a>
+              <a href="#deceler" class="btn btn-primary mt-4">Voir</a>
             </div>
           </div>
         </div>
@@ -94,7 +70,7 @@
               <h3 class="s-en-premunir"><small>Que faire pour s'en prémunir?</small></h3>
             </div>
             <div class="mt-auto">
-              <a href="#le-cyber-harcelement-c-est-quoi" class="btn btn-primary mt-4">Voir</a>
+              <a href="#premunir" class="btn btn-primary mt-4">Voir</a>
             </div>
           </div>
         </div>
@@ -149,7 +125,7 @@
               <h3 class="card-title"><small>Le 3018</small></h3>
             </div>
             <div class="mt-auto">
-              <a href="#Présentation.html#3018" class="btn btn-primary mt-4">Voir</a>
+              <a href="#3018" class="btn btn-primary mt-4">Voir</a>
             </div>
           </div>
         </div>
@@ -159,13 +135,15 @@
   </div>
   <!-- end sum part -->
 
-  <!-- presentation part -->
+  <!-- presentation part Bulma-->
   <section class="section">
       <div class="container">
           <div class="columns is-centered is-multiline">
 
-              <div class="column is-full">
+              <div class="column is-full" id="le-cyber-harcelement-c-est-quoi">
+                <!-- integre une carte -->
                   <div class="card" id="PresBkg" >
+                    <!-- contenu d'une carte -->
                       <div class=" card-content">
                           <div class="content has-text-centered">
                           <h1 class="title is-2 has-text-centered is-info" id="titre">Le cyber-harcèlement c'est quoi?</h1>
@@ -173,6 +151,7 @@
                               <p class="subtitle is-4 has-text-centered" id="text">C'est une forme d'agression numérisée mais tout aussi réelle qui se caractérise par une action répétée visant à nuire à une personne ou à un groupe de personnes, via les réseaux sociaux, les applications de messagerie ou les jeux en ligne.</p>
                           </div>
                           <div class="columns mt-4">
+                            <!-- définit taille colonne -->
                               <div class="column is-one-third">
                                   <figure class="image is-hidden-mobile">
                                       <img class="is-rounded" style="max-width: 200px;" src="./assets/composition-cyber-intimidation.jpg.avif" alt="mains-humaines-pointant-vers-une-personne-fond-bleu">
@@ -196,7 +175,7 @@
       </div>
 
 
-    <div class="column is-full">
+    <div class="column is-full" id="deceler">
       <div class="card" id="PresBkg">
         <div class="card-content has-text-white">
           <div class="content has-text-centered">
@@ -243,7 +222,7 @@
       </div>
     </div>
 
-    <div class="column is-full">
+    <div class="column is-full" id="premunir">
       <div class="card" id="PresBkg">
         <div class="card-content has-text-white">
           <div class="content has-text-centered">
@@ -268,7 +247,7 @@
                Avoir confiance en soi et oser parler.
               </h4>
           </div>
-          <!-- pour une raison inconnu, ce code ne s'affiche pas quand il est dans le style.css -->
+          <!-- pour une raison que je n'explique pas, ce code ne s'affiche pas quand il est dans le style.css -->
             <style>
               @media screen and (max-width:768px){
                 .parallelogram {
@@ -279,14 +258,17 @@
                     border: #3861c1, solid, 2px;
                 }
               }
-                /* #desktop {
-                    display: none;
-                }
-                #mobile {
-                    display: block;
-                    border: #3861c1, solid, 2px;
-                }
+              /* Pr agrandir img au survol, ne fonctionne pas */
+              /* #ficheReflex {
+                width: 200px;
+                transition: transform .1s;
+              }
+              #ficheReflex:hover {
+                -ms-transform: scale(1.5);
+                -webkit-transform: scale(1.5); 
+                transform: scale(1.5);
               } */
+ 
             </style>
             <!-- Fin du style css -->
             <div class="columns mt-3 flex justify-content-center">
@@ -301,7 +283,7 @@
       </div>
     </div>
 
-    <div class="column is-full">
+    <div class="column is-full" id="consequences">
           <div class="card" id="PresBkg" >
               <div class="card-content">
                   <div class="content has-text-centered">
@@ -340,7 +322,7 @@
           </div>
     </div>
 
-    <div class="column is-full">
+    <div class="column is-full" id="pas-devenir">
       <div class="card" id="PresBkg">
         <div class="card-content has-text-white">
           <div class="content has-text-centered">
@@ -373,7 +355,7 @@
       </div>
     </div>
 
-    <div class="column is-full">
+    <div class="column is-full" id="loi">
       <div class="card" id="PresBkg">
         <div class="card-content has-text-white">
           <div class="content has-text-centered">
@@ -416,7 +398,7 @@
       </div>
     </div>
 
-    <div class="column is-full">
+    <div class="column is-full" id="parler">
       <div class="card" id="PresBkg">
         <div class="card-content has-text-white">
           <div class="content has-text-centered mt-6">
@@ -442,7 +424,7 @@
       </div>
     </div>
 
-    <div class="column is-full">
+    <div class="column is-full" id="3018">
       <div class="card" id="PresBkg">
         <div class="card-content has-text-white">
           <div class="content has-text-centered">
@@ -468,30 +450,17 @@
     </div>
 
     <div class="column is-full">
-      <div class="card" id="PresBkg">
+      <div class="card" id="">
         <div class="card-content has-text-white">
-          <div class="content has-text-centered">
-            <div class="overlay is-absolute is-overlay">
-              <div class="parallelogram" style="height: 10%;">
-                <h3 class="title is-2 has-text-centered" id="titre">Ce qu'il faut retenir</h3>
-              </div>
-              <div class="noParallelogram" style="height: 10%;">
-                <h3 class="title is-2 has-text-centered" id="titre">Ce qu'il faut retenir</h3>
-              </div>
-            </div>
-            <!-- <div class="columns is-mobile ">
-              <div class="column "> -->
-              <!-- </div>
-            </div> -->
-            <div class="columns is-centered mt-6">
-                <div class="column is-full mt-6">
-                    <figure class="image  ">
-                        <img style=" width: 60%" src="./assets/Fiche-reflexe-cyberharcelement.jpg.webp" alt="les points à retenir sur le cyber-harcèlement">
-                    </figure>
-                </div>
-            </div>
-          </div>
+              <h3 class="title is-2 has-text-centered" id="titre">Ce qu'il faut retenir</h3>
         </div>
+              <div class="card-image">
+              <!-- https://www.codeur.com/tuto/css/effet-zoom-sur-image-au-hover/, pour agrandir l'image -->
+                <figure class="image is-4by3" style="@media screen and (max-width: 768px) {width: 100%; max-width: 500px; height: auto;}">
+                  <img src="./assets/Fiche-reflexe-cyberharcelement.jpg.webp" alt="les points à retenir sur le cyber-harcèlement" id="ficheReflex">
+                </figure>
+              </div>
+        
       </div>
     </div>
   </div>

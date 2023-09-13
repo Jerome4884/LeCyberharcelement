@@ -10,7 +10,7 @@ require_once("connexionBd.php");
 
 // vérification si les champs ne sont pas vide
 if (!empty($_POST['name']) && !empty($_POST['password'])) {
-    $name = htmlspecialchars(trim($_POST['name']));
+    $name = htmlentities(trim($_POST['name']));
     $password = $_POST['password'];
 
 // Requete pour vérifier si le name et le pwd existe dans la bdd
@@ -53,23 +53,27 @@ if (!empty($_POST['name']) && !empty($_POST['password'])) {
                 <h1 class="title is-3 has-text-centered" id="titre" style="color: white;"><u>Connectez vous ici</u></h1>
 
                 <!-- Ajouter lien pour go sur page register si pas enregistré -->
+                <!-- créer un formulaire  -->
                 <form action="" method="post" id="formLog">
+                    <!-- creer un container  -->
                     <div class="field">
+                        <!-- Pour inserer une description au dessus du champ à remplir -->
                         <label class="label" >Nom d'utilisateur</label>
+                        <!-- Permet l'ajout d'une icône -->
                             <p class="control has-icons-left">
-                            <!-- <div class="control"> -->
+                            <!-- Creer le champ à remplir -->
                                 <input class="input" type="text" placeholder="Nom d'utilisateur" name="name">
+                                    <!-- Ajoute une icône dans le champ à remplir -->
                                     <span class="icon is-small is-left">
                                         <i class="fa-solid fa-user"></i>
                                     </span>
-                            <!-- </div> -->
-                            </p>
+                            </p> <!-- Ferme la balise d'ajout de l'icône -->
                     </div>
                     <div class="field">
                         <label class="label" >Mot de passe</label>
                             <p class="control has-icons-left">
                             <!-- <div class="control"> -->
-                                <input type="password" name="password" id="password" placeholder="Mot de passe">
+                                <input class="input" type="password" name="password" id="password" placeholder="Mot de passe">
                                     <span class="icon is-small is-left">
                                         <i class="fa-solid fa-lock"></i>
                                     </span>

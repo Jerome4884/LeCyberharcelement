@@ -5,12 +5,15 @@ require_once("connexionBd.php");
 // Vérification si les champs demandés dans le formulaire sont bien renseignés
 if (isset($_POST['submit']) && !empty($_POST['name']) && !empty($_POST['password']) && !empty($_POST['city'])
      && !empty($_POST['postal-code']) && !empty($_POST['email'])) {
-
+        
+        if (strlen($_POST['password'] <= 8 )) {
+            $echo = "Le mot de passe doit contenir huit charactères minimun";
+        } else {
 // Définition des variables, trim permet de supprimer les espaces
-    $userN = trim($_POST['name']);
-    $mail = trim($_POST['email']);
-    $city = trim($_POST['city']);
-    $zip = trim($_POST['postal-code']);
+    $userN = htmlentities(trim($_POST['name']));
+    $mail = htmlentities(trim($_POST['email']));
+    $city = htmlentities(trim($_POST['city']));
+    $zip = htmlentities(trim($_POST['postal-code']));
 
 // Permet de vérifier si name et pwd existe déjà 
     $sqlUsername = "SELECT `name`, `password` FROM `user` WHERE `name` = :user"; // requete pour récuperer name et pwd
@@ -64,7 +67,7 @@ if (isset($_POST['submit']) && !empty($_POST['name']) && !empty($_POST['password
             echo 'Une erreur est survenue lors de votre enregistrement';
         }    
     }
-
+}
 
 ?>
 
@@ -89,11 +92,12 @@ if (isset($_POST['submit']) && !empty($_POST['name']) && !empty($_POST['password
                                 <div class="control">
                                     <input class="input" type="password" name="password" id="password" placeholder="Mot de passe">
                                 </div>
+                                <!-- <?php $echo ?> -->
                         </div>
                         <div class="field">
                             <label class="label">Email</label>
                             <div class="control">
-                                <input class="input" type="text" placeholder="Email" name="email">
+                                <input class="input" type="email" placeholder="Email" name="email">
                             </div>
                         </div>
                         <div class="field">
@@ -105,7 +109,7 @@ if (isset($_POST['submit']) && !empty($_POST['name']) && !empty($_POST['password
                         <div class="field">
                             <label class="label">Code postal</label>
                             <div class="control">
-                                <input class="input" type="text" placeholder="Code postal" name="postal-code">
+                                <input class="input" type="number" placeholder="Code postal" name="postal-code">
                             </div>
                         </div>
                         <div class="field">
