@@ -72,7 +72,7 @@
               <h3 class="card-title" id="text"><small>Le cyberharcèlement, c'est quoi?</small></h3>
             </div>
             <div class="mt-auto">
-              <a href="#le-cyber-harcelement-c-est-quoi" class="btn btn-primary mt-4">Voir</a>
+              <a href="#le-cyber-harcelement" class="btn btn-primary mt-4">Voir</a>
             </div>
           </div>
         </div>
@@ -83,7 +83,7 @@
               <h3 class="card-title" id="text"><small>Comment le déceler?</small></h3>
             </div>
             <div class="mt-auto">
-              <a href="#le-cyber-harcelement-c-est-quoi" class="btn btn-primary mt-4">Voir</a>
+              <a href="#comment-le-deceler" class="btn btn-primary mt-4">Voir</a>
             </div>
           </div>
         </div>
@@ -91,10 +91,10 @@
           <img class="card-img-top" style="height:30vh; max-height:35vh; border:1px solid #29478B" src="assets/bouclier.jpeg" alt="Card image cap">
           <div class="card-body d-flex flex-column align-items-center justify-content-center">
             <div class="text-center">
-              <h3 class="s-en-premunir" id="text"><small>Que faire pour s'en prémunir?</small></h3>
+              <h3 class="" id="text"><small>Que faire pour s'en prémunir?</small></h3>
             </div>
             <div class="mt-auto">
-              <a href="#le-cyber-harcelement-c-est-quoi" class="btn btn-primary mt-4">Voir</a>
+              <a href="#s-en-premunir" class="btn btn-primary mt-4">Voir</a>
             </div>
           </div>
         </div>
@@ -149,7 +149,7 @@
               <h3 class="card-title" id="text"><small>Le 3018</small></h3>
             </div>
             <div class="mt-auto">
-              <a href="#Présentation.html#3018" class="btn btn-primary mt-4">Voir</a>
+              <a href="#3018" class="btn btn-primary mt-4">Voir</a>
             </div>
           </div>
         </div>
@@ -167,7 +167,7 @@
               <div class="column is-full">
                   <div class="card" id="PresBkg" >
                       <div class=" card-content">
-                          <div class="content has-text-centered">
+                          <div class="content has-text-centered" id="le-cyber-harcelement">
                           <h1 class="title is-2 has-text-centered is-info" id="titre">Le cyber-harcèlement c'est quoi?</h1>
                           <div class="card" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
                               <p class="subtitle is-4 has-text-centered" id="text">C'est une forme d'agression numérisée mais tout aussi réelle qui se caractérise par une action répétée visant à nuire à une personne ou à un groupe de personnes, via les réseaux sociaux, les applications de messagerie ou les jeux en ligne.</p>
@@ -199,7 +199,7 @@
     <div class="column is-full">
       <div class="card" id="PresBkg">
         <div class="card-content has-text-white">
-          <div class="content has-text-centered">
+          <div class="content has-text-centered" id="comment-le-deceler">
             <h1 class="title is-1 has-text-centered" id="titre">Comment le déceler ?</h1>
               <div class="card">
                 <div class="columns mx-5 ">
@@ -246,7 +246,7 @@
     <div class="column is-full">
       <div class="card" id="PresBkg">
         <div class="card-content has-text-white">
-          <div class="content has-text-centered">
+          <div class="content has-text-centered" id="s-en-premunir">
           <h1 class="title is-1 has-text-centered" id="titre">Que faire pour s'en prémunir?</h1>
           <div class="box" style="background-color: #d4cac170;">
              <h4 class="subtitle is-5 has-text-centered" id="text" style="background-color: #B2BCCF; border-radius: 15px; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">Il existe plusieurs manières de s'en prémunir :
@@ -268,6 +268,7 @@
                Avoir confiance en soi et oser parler.
               </h4>
           </div>
+          
           <!-- pour une raison inconnu, ce code ne s'affiche pas quand il est dans le style.css -->
             <style>
               @media screen and (max-width:768px){
@@ -296,6 +297,7 @@
               } */
             </style>
             <!-- Fin du style css -->
+
             <div class="columns mt-3 flex justify-content-center">
                 <div class="column is-one-third">
                     <figure class="image is-16by9">
@@ -311,7 +313,7 @@
     <div class="column is-full">
           <div class="card" id="PresBkg" >
               <div class="card-content">
-                  <div class="content has-text-centered">
+                  <div class="content has-text-centered" id="consequences">
                       <h1 class="title is-2 has-text-centered is-info" id="titre">Quelles sont les conséquences</h1>
                       <p class="subtitle is-4 has-text-centered " id="text" style="background-color: #B2BCCF; border-radius: 15px; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">Ces agressions peuvent avoir un impact négatif sur votre santé physique et mentale, affectant à la fois votre bien-être émotionnel et psychologique. Elles peuvent engendrer divers problèmes, comme:</p>
                         <figure class="image is-hidden-mobile">
@@ -350,7 +352,7 @@
     <div class="column is-full">
       <div class="card" id="PresBkg">
         <div class="card-content has-text-white">
-          <div class="content has-text-centered">
+          <div class="content has-text-centered" id="pas-devenir">
           <h1 class="title is-1 has-text-centered" id="titre">Et pour ne pas le devenir ?</h1>
           <figure class="image is-hidden-mobile">
                <img id="img" style="width: 500px;" src="./assets/images3.jpeg">
@@ -383,7 +385,7 @@
     <div class="column is-full">
       <div class="card" id="PresBkg">
         <div class="card-content has-text-white">
-          <div class="content has-text-centered">
+          <div class="content has-text-centered" id="loi">
               <h1 class="title is-1 has-text-centered" id="titre">Que dit la loi ?</h1>
               <div class="box" id="boxLaw">
                 <!-- <div class="columns is-multiline is-mobile"> -->
@@ -428,7 +430,7 @@
         <div class="card-content has-text-white">
           <div class="content has-text-centered mt-6">
             <div class="overlay is-absolute is-overlay" style="top: 2%; right: 10%; left: 10%; opacity: 0.8;">
-              <div class="box  has-background-grey-light">
+              <div class="box has-background-grey-light" id="parler">
                 <h1 class="title is-2 has-text-centered" id="titre">A qui en parler ?</h1>
               </div>
             </div>
@@ -452,7 +454,7 @@
     <div class="column is-full">
       <div class="card" id="PresBkg">
         <div class="card-content has-text-white">
-          <div class="content has-text-centered">
+          <div class="content has-text-centered" id="3018">
             <div class="container has-text-centered" id="container">
               <div class="cloud" style="background-color: bisque;; border-radius: 10% 20% 40% 50% / 50% 30% 30% 60%; padding: 10px; text-align: center;">
                 <h1 class="title is-1 has-text-centered" id="titre">Le 3018</h1>

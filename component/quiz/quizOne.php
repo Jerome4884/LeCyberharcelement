@@ -72,7 +72,7 @@
                     <nav class="pagination is-rounded" role="navigation" aria-label="pagination">
                         <a id="previous-question" class="pagination-previous" style="display: none;">Précédent</a>
                         <a id="next-question" class="pagination-next">Suivant</a>
-                        <button id="submit-quiz" class="pagination-next" type="submit" style="display: none;"><a href="?routing=quizTraitment">Envoyer</button>
+                        <button id="submit-quiz" class="pagination-next" type="submit" style="display: none;">Envoyer</button>
                     </nav>
                 </form>
                 <?php

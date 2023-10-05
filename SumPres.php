@@ -26,7 +26,6 @@
 
 <body style="background-color: #F3FAFD;">
 
-
   <!-- sum part bootstrap-->
   <div class="py-5 scrollspy" style="background-image: url(assets/PrésentationCyber-harcèlement-2.png); background-size: cover;">
     <main class="container mt-5">

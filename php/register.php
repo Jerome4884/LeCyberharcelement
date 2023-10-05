@@ -73,31 +73,45 @@ if (isset($_POST['submit']) && !empty($_POST['name']) && !empty($_POST['password
 
 
 <body>
-    
+    <style>
+        input {
+            border: 2px solid currentcolor;
+        }
+        input:invalid {
+            border: 2px dashed red;
+        }
+        input:invalid:focus {
+            background-image: linear-gradient(orange, lightgreen);
+        }
+        input:required {
+            border: 1px solid grey;
+        }
+
+    </style>
     <!--Formulaire d'inscription-->
     <section class="section is-medium" style="background-image: url(Assets/background2.jpg); background-size: cover; height: 100%;">
         <div class="container">
             <div class="columns is-centered">
                 <div class="column is-half">
-                    <h1 class="title is-3 has-text-centered" id="titre" style="color: white;"><u>Pour mieux vous connaitre  </u></h1>
+                    <h1 class="title is-3 has-text-centered" id="titre" style="color: white;"><u>Pour mieux vous connaitre </u></h1>
                     <form action="" method="post" id="myForm">
                         <div class="field">
                             <label class="label">Nom d'utilisateur</label>
                             <div class="control">
-                                <input class="input" type="text" placeholder="Nom d'utilisateur" name="name">
+                                <input class="input" type="text" placeholder="Nom d'utilisateur" name="name" minlength="2" maxlength="20" required>
                             </div>
                         </div>
                         <div class="field">
                             <label class="label">Mot de passe</label>
                                 <div class="control">
-                                    <input class="input" type="password" name="password" id="password" placeholder="Mot de passe">
+                                    <input class="input" type="password" name="password" id="password" placeholder="Mot de passe" minlength="8" maxlength="30" required>
                                 </div>
                                 <!-- <?php $echo ?> -->
                         </div>
                         <div class="field">
                             <label class="label">Email</label>
                             <div class="control">
-                                <input class="input" type="email" placeholder="Email" name="email">
+                                <input class="input" type="email" placeholder="Email" name="email" required>
                             </div>
                         </div>
                         <div class="field">
@@ -109,7 +123,7 @@ if (isset($_POST['submit']) && !empty($_POST['name']) && !empty($_POST['password
                         <div class="field">
                             <label class="label">Code postal</label>
                             <div class="control">
-                                <input class="input" type="number" placeholder="Code postal" name="postal-code">
+                                <input class="input" type="text" placeholder="Code postal" name="postal-code" minlength="2" maxlength="5">
                             </div>
                         </div>
                         <div class="field">

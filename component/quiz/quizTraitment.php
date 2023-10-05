@@ -39,17 +39,17 @@ if (isset($_GET['send'])) {
         $db = connecDb();
         $userId = $_SESSION['name'];
         foreach ($goodAnswersSelected as $repUser) {
-            var_dump($repUser);
-            $sqlRepUser = 'INSERT INTO `answer_user` (`user_id`, `quizUser_id`, `question_id`, `answer_id`) 
-                           VALUES(:userId, :quizUserId, :questId, :answerId)'; 
+            // var_dump($repUser);
+            $sqlRepUser = 'INSERT INTO `answer_user` (`answerUser_id`, `quizUser_id`, `question_id`, `answer_id`) 
+                           VALUES(:answerUserId, :quizUserId, :questId, :answerId)'; 
             $queryRepUser = $db->prepare($sqlRepUser);
             $queryRepUser-> execute([
-                "userId" => $userId,
+                "answerUserId" => $userId,
                 "quizUserId" => $quiz->getId(),
                 "questId" => $question->getId(),
                 "answerId" => $goodAnswer->getId()
             ]);
-            var_dump($sqlRepUser);
+            // var_dump($sqlRepUser);
             // $quizUserId = $quiz;
             // $questId = $_POST[$qId];
             // $answerId = $goodAnswers;
