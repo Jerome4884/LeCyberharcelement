@@ -35,14 +35,6 @@ Puis lui afficher ces reponses ainsi qu'un score. -->
 <?php
 
 // Create function to connect with the bd
-function connecDb() {
-    try {
-        return new PDO('mysql:host=localhost;dbname=cyberharcelement;charset=utf8', 'root', '');
-    } catch (Exception $e) {
-        echo $e->getMessage();
-        die("ERREUR : Problème de connexion");
-    }
-}
 
 function getQuest($quizId) {
     $db = connecDb();
