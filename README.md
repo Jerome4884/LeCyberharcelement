@@ -8,4 +8,6 @@
 
 # The back-end is in native php.
 
-# This project is not yet complete
+# This first part is complete. It will be improved as my skills increase. 
+
+# The administrator part is currently being coded. 
