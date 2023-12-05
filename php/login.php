@@ -24,7 +24,7 @@ if (!empty($_POST['name']) && !empty($_POST['password'])) {
 
 // Si les infos sont vérifiés alors on envoie l'utilisateur à la page quizPresentation
     if ($user && password_verify($password, $user['password'])) {
-
+            
 // démarrage d'une session propre à l'utilisateur afin de garder ses infos de connection 
 // dans le navigateur pendant un temps déterminé
         session_start();
@@ -90,7 +90,7 @@ if (!empty($_POST['name']) && !empty($_POST['password'])) {
                     </div>
                 </form>
                 <!-- <div class="is-flex is-justify-content-center is-align-items-center mt-6 " style="background-color: #d4cac170;border-radius: 10vh"> -->
-                    <h1 class="title is-3 has-text-centered mt-6 " id="titre"><a href="?routing=register">Ou enregistré-vous en cliquant ici</a></h1>
+                    <h1 class="title is-3 has-text-centered mt-6 " id="titre"><a href="?routing=register">Ou enregistrez-vous en cliquant ici</a></h1>
                 </div>
             </div>
         </div>

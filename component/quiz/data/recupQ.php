@@ -37,7 +37,7 @@ Puis lui afficher ces reponses ainsi qu'un score. -->
 // Create function to connect with the bd
 function connecDb() {
     try {
-        return new PDO('mysql:host=localhost;dbname=cyberharcelement;charset=utf8', 'root', '');
+        return new PDO('mysql:host=localhost;dbname=cyberharcelement;port=4306;charset=utf8', 'root', '');
     } catch (Exception $e) {
         echo $e->getMessage();
         die("ERREUR : Problème de connexion");

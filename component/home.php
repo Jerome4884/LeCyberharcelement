@@ -46,8 +46,8 @@ text-decoration: none;
     </div>
     <div class="row">
       <div class="col-md-12">
-        <h1 id="titre" class="title is-1 has-text-white-bis text-mobile">
-          Le cyber-harcèlement présenté par Aegis-civis groupe
+        <h1 id="titre" class="title is-1 mb-6 has-text-white-bis text-mobile">
+          Le cyber-harcèlement présenté<br> par Aegis-civis groupe
         </h1>
       </div>
     </div>

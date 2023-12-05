@@ -67,7 +67,9 @@
         <div class="navbar-brand" id="social">
             <p><small>suivez-nous sur les réseaux</small></p>
             <a href="https://www.linkedin.com/company/aegis-civis/" class="navbar-item"><img src="assets/linkedin.png" alt="linkedin"></a>
+            <a href="https://www.facebook.com/groupeaegiscivis" class="navbar-item"><img src="assets/facebook.png" alt="facebook"></a>
         </div>
+
       <div class="navbar-item">
         <div class="buttons is-rounded">
           <a class="button is-rounded" href="?routing=login" style="background-color: #29478B; color: white; text-decoration: none;">

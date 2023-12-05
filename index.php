@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -36,18 +34,18 @@ ob_start(); // Permet d'enregistré les données dans une mémoire tampon / Stor
 <header>
 <div id="hautPage"></div>
     <!--Navigation-->
-        <nav class="navbar" id="navBar" role="navigation" aria-label="main navigation" style="background-color: #d4cac1; max-height:130px">
+        <nav class="navbar " id="navBar" role="navigation" aria-label="main navigation" style="background-color: #d4cac1; max-height:130px">
             <!-- element pour img -->
-            <div class="navbar-brand">
+            <div class="navbar-brand ">
                 <div class="columns is-mobile">
-                    <div class="column">
-                    <figure class="image is-128x128 mr-3 logo">
-                        <a href="."><img src="assets/LOGO AEGIS.png" alt="logo"></a>
-                    </figure>
+                    <div class="column ">
+                        <figure class="image is-128x128 mr-3 logo">
+                            <a href="."><img src="assets/LOGO AEGIS.png" alt="logo"></a>
+                        </figure>
                     </div>
-                    <div class="column is-two-thirds-mobile">
+                    <div class="column is-12 ml-4 is-mobile">
                         <!-- fait apparaitre menu burger en mobile -->
-                        <a role="button" class="navbar-burger is-align-self-flex-end is-align-self-center button mt-4" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                        <a role="button" class="navbar-burger button mt-4" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
                             <span aria-hidden="true"></span>
                             <span aria-hidden="true"></span>
                             <span aria-hidden="true"></span>
@@ -87,6 +85,7 @@ ob_start(); // Permet d'enregistré les données dans une mémoire tampon / Stor
                     <div class="navbar-brand mr-6 is-flex " >
                         <p class=" is-hidden-mobile mt-2"><small>suivez-nous sur les réseaux</small></p>
                         <a href="https://www.linkedin.com/company/aegis-civis/" class="navbar-item"><img src="assets/linkedin.png" alt="linkedin"></a>
+                        <a href="https://www.facebook.com/groupeaegiscivis" class="navbar-item"><img src="assets/facebook.png" alt="facebook"></a>
                     </div>
                     <div class="navbar-item">
                         <div class="buttons is-rounded is-small">
@@ -182,25 +181,25 @@ ob_start(); // Permet d'enregistré les données dans une mémoire tampon / Stor
                         break;
                 }
                 ?>
-                <a class='button' href=#hautPage style='background-color: #29478B; color: white; text-decoration: none;  position: absolute;
-   right: 0; transform: translateY(-50%); width: 15px'><i class="fa-solid fa-arrow-up fa-bounce"></i></a>
+                <a class='button' href=#hautPage style='background-color: #29478B; color: white; text-decoration: none;  position: fixed;
+   top: 90%; left:92%; border-radius: 50%; '><i class="fa-solid fa-arrow-up fa-bounce"></i></a>
             </div>
         </div>
     </div>
 
     <!--footer-->
-    <footer class="footer is-flex is-align-items-center is-justify-content-center" id="foter"><!-- style="background-color: #B2BCCF; height: 20px;"-->
-        <div style="margin-top: 0; padding-top:1px; display: flex; flex-direction: column; justify-content:center; align-items: center;">
+    <footer class="footer is-flex is-align-items-center is-justify-content-center" id="foter" style="height: auto;" ><!-- style="background-color: #B2BCCF; height: 20px;"-->
+        <div style=" margin-top: 0; padding-top:1px; display: flex; flex-direction: column; justify-content:center; align-items: center;">
             <figure class="image is-128x128 ml-3 logo">
                 <a href="."><img src="assets/LOGO AEGIS.png" alt="logo"></a>
             </figure>
             <h6 class="subtitle has-text-centered">© 2023 </h6>
             <h6 class="subtitle has-text-centered is-block-mobile" id="contentFoot">
-                <strong>Le cyber-harcelement </strong> par Aegis-Civis. <br>Tous droit réservé
+                <strong>Le cyber-harcèlement </strong> par Aegis-Civis. <br>Tous droits réservés
             </h6>
             <div class="bulle">
-                <p class="subtitle has-text-centered is-5 info" id="text">
-                    Passé votre souris dessus pour voir ce qui s'y cache
+                <p class="subtitle has-text-centered is-5 info" id="text" style="width: auto; white-space: nonwrap;">
+                    Passez votre souris dessus pour voir ce qui s'y cache
                 </p>
             </div>
         </div>
@@ -235,9 +234,17 @@ $navbarBurgers.forEach( el => {
     // Footer
     let info = document.getElementsByClassName("info")[0];
     let bulle = document.getElementsByClassName("bulle")[0];
-    info.addEventListener("mouseenter", () => {
-        info.innerHTML = "Ce site a été réalisé au cours d'un stage chez Aegis-Civis groupe par Jérôme, un stagiaire en formation de développeur web et web mobile, donc débutant. Si le site présente des bugs, des imperfections ou autres problèmes, la faute incombe uniquement à Jérôme. Merci de votre compréhension.";
-    });
+
+    function show() {
+        info.addEventListener("mouseenter", function() {
+            info.innerHTML = "Ce site a été réalisé au cours d'un stage chez Aegis-Civis groupe par Jérôme, développeur web junior. Si le site présente des bugs, des imperfections ou autres problèmes, la faute incombe uniquement à Jérôme. Merci de votre compréhension.";
+        });
+
+        info.addEventListener("mouseleave", function() {
+            info.innerHTML = "Passez votre souris dessus pour voir ce qui s'y cache";
+        });
+    }    
+    show();
 
     // scroll 
 // Je déclare les variables

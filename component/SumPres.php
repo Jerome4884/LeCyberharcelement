@@ -6,8 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- css link -->
-  <?php echo '<link rel="stylesheet" type="text/css" href="style.css">' ?>
-  <link rel="stylesheet" href="style.css">
+  <!-- <?php echo '<link rel="stylesheet" type="text/css" href="style.css">' ?> -->
+  <!-- <link rel="stylesheet" type="text/css" href="./style.css"> -->
+  <!-- <link rel="stylesheet" href="style.css"> -->
   <!-- Bulma link -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css" />
   <!-- bootstrap link -->
@@ -166,9 +167,18 @@
 
               <div class="column is-full">
                   <div class="card" id="PresBkg" >
-                      <div class=" card-content">
+                      <div class="card-content">
                           <div class="content has-text-centered" id="le-cyber-harcelement">
-                          <h1 class="title is-2 has-text-centered is-info" id="titre">Le cyber-harcèlement c'est quoi?</h1>
+                            <div class="columns">
+                              <div class="column is-2">
+                                <figure class="image">
+                                  <img style="width:150px; margin-top:-30px; padding-right:15px ; " src="assets/LOGO AEGIS.png" alt="logo">
+                                </figure>
+                              </div>
+                              <div class="column is-8">
+                                <h1 class="title is-2 has-text-centered is-info" id="titre">Le cyber-harcèlement c'est quoi?</h1>
+                              </div>
+                            </div>
                           <div class="card" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
                               <p class="subtitle is-4 has-text-centered" id="text">C'est une forme d'agression numérisée mais tout aussi réelle qui se caractérise par une action répétée visant à nuire à une personne ou à un groupe de personnes, via les réseaux sociaux, les applications de messagerie ou les jeux en ligne.</p>
                           </div>
@@ -177,7 +187,7 @@
                                   <figure class="image is-hidden-mobile">
                                       <img class="is-rounded" style="max-width: 200px;" src="./assets/composition-cyber-intimidation.jpg.avif" alt="mains-humaines-pointant-vers-une-personne-fond-bleu">
                                   </figure>
-                                </div>
+                              </div>
                               <div class="column is-one-third">
                                   <figure class="image is-16by9">
                                       <!-- Your content -->
@@ -200,44 +210,54 @@
       <div class="card" id="PresBkg">
         <div class="card-content has-text-white">
           <div class="content has-text-centered" id="comment-le-deceler">
-            <h1 class="title is-1 has-text-centered" id="titre">Comment le déceler ?</h1>
-              <div class="card">
-                <div class="columns mx-5 ">
-                  <i class="fa-solid fa-quote-left fa-2xl"></i>
+            <div class="columns">
+              <div class="column is-2">
+                <figure class="image">
+                  <img style="width:150px; margin-top:-30px; padding-right:15px ; " src="assets/LOGO AEGIS.png" alt="logo">
+                </figure>
+              </div>
+              <div class="column is-8">
+                <h1 class="title is-1 has-text-centered" id="titre">Comment le déceler ?</h1>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="columns mx-5 ">
+                <i class="fa-solid fa-quote-left fa-2xl"></i>
+              </div>
+              <h4 class="subtitle is-5" id="text">Il se matérialise sous différentes formes:
+                  Messages irrespectueux, violents.
+                  Incitation à faire des choses contre sa volonté, comme s'auto-mutiler.
+                  Diffusions d'images ou vidéos en ligne sans le consentement de la personne.
+                  Usurpation d'identité digitale
+              </h4>
+            </div>
+            <div class="card mt-3">
+              <h4 class="subtitle is-5 mb-5" id="text">
+                  Ce sont généralement des actes répétés et intentionnels, mais il peut parfois être difficile de faire la différence avec une plaisanterie. Pour cela, demander des excuses à la personne, si elle n'en présente pas cela signifie que c'est délibéré.
+              </h4>
+              <div class="columns is-flex-direction-row-reverse ">
+                  <i class="fa-solid fa-quote-left fa-flip-horizontal fa-2xl"></i>
+              </div>
+            </div>
+            <div class="columns mt-3">
+                <div class="column is-one-third">
+                    <figure class="image is-hidden-mobile">
+                          <img class="is-rounded" style="max-width: 200px;" src="./assets/images9.jpeg" alt="mains-humaines-pointant-vers-une-personne-fond-bleu">
+                    </figure>
                 </div>
-                <h4 class="subtitle is-5" id="text">Il se matérialise sous différentes formes:
-                    Messages irrespectueux, violents.
-                    Incitation à faire des choses contre sa volonté, comme s'auto-mutiler.
-                    Diffusion d'image ou vidéo en ligne contre le consentement de la personne.
-                    Usurpation d'identité digitale
-                </h4>
-              </div>
-              <div class="card mt-3">
-                <h4 class="subtitle is-5 mb-5" id="text">
-                   Ce sont généralement des actes répétés et intentionnels, mais il peut parfois être difficile de faire la différence avec une plaisanterie. Pour cela, demander des excuses à la personne, si elle n'en présente pas cela signifie que c'est délibéré.
-                </h4>
-                <div class="columns is-flex-direction-row-reverse ">
-                    <i class="fa-solid fa-quote-left fa-flip-horizontal fa-2xl"></i>
+                <div class="column is-one-third">
+                    <figure class="image is-16by9">
+                        <!-- Your content -->
+                        <iframe class="has-ratio" width="460" height="215" src="https://www.youtube.com/embed/kQhJmErUUlM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </figure>
                 </div>
-              </div>
-              <div class="columns mt-3">
-                  <div class="column is-one-third">
-                      <figure class="image is-hidden-mobile">
-                            <img class="is-rounded" style="max-width: 200px;" src="./assets/images9.jpeg" alt="mains-humaines-pointant-vers-une-personne-fond-bleu">
-                      </figure>
-                  </div>
-                  <div class="column is-one-third">
-                      <figure class="image is-16by9">
-                          <!-- Your content -->
-                          <iframe class="has-ratio" width="460" height="215" src="https://www.youtube.com/embed/kQhJmErUUlM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                      </figure>
-                  </div>
-                  <div class="column is-one-third">
-                      <figure class="image is-hidden-mobile">
-                            <img class="is-rounded" style="max-width: 200px;" src="./assets/concept-illustration-cyberintimidation_23-2148602246.jpg.avif" alt="mains-humaines-pointant-vers-une-personne-fond-bleu">
-                      </figure>
-                  </div>
-              </div>
+                <div class="column is-one-third">
+                    <figure class="image is-hidden-mobile">
+                          <img class="is-rounded" style="max-width: 200px;" src="./assets/concept-illustration-cyberintimidation_23-2148602246.jpg.avif" alt="mains-humaines-pointant-vers-une-personne-fond-bleu">
+                    </figure>
+                </div>
+            </div>
           </div>
         </div>
       </div>
@@ -247,7 +267,16 @@
       <div class="card" id="PresBkg">
         <div class="card-content has-text-white">
           <div class="content has-text-centered" id="s-en-premunir">
-          <h1 class="title is-1 has-text-centered" id="titre">Que faire pour s'en prémunir?</h1>
+            <div class="columns">
+                <div class="column is-2">
+                  <figure class="image">
+                    <img style="width:150px; margin-top:-30px; padding-right:15px ; " src="assets/LOGO AEGIS.png" alt="logo">
+                  </figure>
+                </div>
+                <div class="column is-8">
+                  <h1 class="title is-1 has-text-centered" id="titre">Que faire pour s'en prémunir?</h1>
+                </div>
+            </div>
           <div class="box" style="background-color: #d4cac170;">
              <h4 class="subtitle is-5 has-text-centered" id="text" style="background-color: #B2BCCF; border-radius: 15px; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">Il existe plusieurs manières de s'en prémunir :
                Configurer ses comptes de manière à laisser passer le moins d'informations sensibles possibles.
@@ -311,72 +340,88 @@
     </div>
 
     <div class="column is-full">
-          <div class="card" id="PresBkg" >
-              <div class="card-content">
-                  <div class="content has-text-centered" id="consequences">
-                      <h1 class="title is-2 has-text-centered is-info" id="titre">Quelles sont les conséquences</h1>
-                      <p class="subtitle is-4 has-text-centered " id="text" style="background-color: #B2BCCF; border-radius: 15px; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">Ces agressions peuvent avoir un impact négatif sur votre santé physique et mentale, affectant à la fois votre bien-être émotionnel et psychologique. Elles peuvent engendrer divers problèmes, comme:</p>
-                        <figure class="image is-hidden-mobile">
-                            <img id="img" style="margin-left: 900px; max-width: 200px;" src="./assets/images2.jpeg">
-                        </figure>
-                        <div class="content has-text-centered" id="desktop">
-                          <!-- <ul style="list-style-type: none;"> -->
-                          <!-- "is-hidden-mobile" ne fonctionne pas que pour les img -->
-                             <!-- <div class="cloud is-hidden-mobile" style="background-color: bisque; border-radius: 10% 20% 40% 50% / 50% 30% 30% 60%; padding: 10px; text-align: center;"> -->
-                                 <p class="subtitle is-3" id="text" style="background-color: bisque; border-radius: 10% 20% 40% 50% / 50% 30% 30% 60%; padding: 10px; text-align: center;">Reclus social</p>
-                             <!-- </div> -->
-                                <p class="subtitle is-3" id="text">Anxiété</p>
-                             <!-- <div class="cloud" style="background-color: bisque; border-radius: 10% 20% 40% 50% / 50% 30% 30% 60%; padding: 10px; text-align: center;"> -->
-                                 <p class="subtitle is-3" id="text" style="background-color: bisque; border-radius: 10% 20% 40% 50% / 50% 30% 30% 60%; padding: 10px; text-align: center;">Saut d'humeur</p>
-                             <!-- </div> -->
-                                <p class="subtitle is-3" id="text">Perturbation du sommeil</p>
-                             <!-- <div class="cloud" style="background-color: bisque; border-radius: 10% 20% 40% 50% / 50% 30% 30% 60%; padding: 10px; text-align: center;"> -->
-                                <p class="subtitle is-3" id="text" style="background-color: bisque; border-radius: 10% 20% 40% 50% / 50% 30% 30% 60%; padding: 10px; text-align: center;">Décrochage scolaire</p>
-                             <!-- </div> -->
-                                <p class="subtitle is-3" id="text">Dépression</p>
-                             <!-- <div class="cloud" style="background-color: bisque; border-radius: 10% 20% 40% 50% / 50% 30% 30% 60%; padding: 10px; text-align: center;"> -->
-                                <p class="subtitle is-3" id="text" style="background-color: bisque; border-radius: 10% 20% 40% 50% / 50% 30% 30% 60%; padding: 10px; text-align: center;">Stress</p>
-                             <!-- </div> -->
-                          <!-- </ul> -->
-                      </div>
-
-                      <figure class="image is-hidden-mobile">
-                          <img id="img" style="margin-right: 1300px; max-width: 200px;" src="./assets/images111.jpeg">
-                      </figure>
-
-                    </div>
+      <div class="card" id="PresBkg" >
+          <div class="card-content">
+              <div class="content has-text-centered" id="consequences">
+                <div class="columns">
+                  <div class="column is-2">
+                    <figure class="image">
+                      <img style="width:150px; margin-top:-30px; padding-right:15px ; " src="assets/LOGO AEGIS.png" alt="logo">
+                    </figure>
+                  </div>
+                  <div class="column is-8">
+                    <h1 class="title is-2 has-text-centered is-info" id="titre">Quelles sont les conséquences</h1>
+                  </div>
               </div>
+              <p class="subtitle is-4 has-text-centered " id="text" style="background-color: #B2BCCF; border-radius: 15px; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">Ces agressions peuvent avoir un impact négatif sur votre santé physique et mentale, affectant à la fois votre bien-être émotionnel et psychologique. Elles peuvent engendrer divers problèmes, comme:</p>
+                <figure class="image is-hidden-mobile">
+                    <img id="img" style="margin-left: 900px; max-width: 200px;" src="./assets/images2.jpeg">
+                </figure>
+                <div class="content has-text-centered" id="desktop">
+                  <!-- <ul style="list-style-type: none;"> -->
+                  <!-- "is-hidden-mobile" ne fonctionne pas que pour les img -->
+                      <!-- <div class="cloud is-hidden-mobile" style="background-color: bisque; border-radius: 10% 20% 40% 50% / 50% 30% 30% 60%; padding: 10px; text-align: center;"> -->
+                          <p class="subtitle is-3" id="text" style="background-color: bisque; border-radius: 10% 20% 40% 50% / 50% 30% 30% 60%; padding: 10px; text-align: center;">Reclus social</p>
+                      <!-- </div> -->
+                        <p class="subtitle is-3" id="text">Anxiété</p>
+                      <!-- <div class="cloud" style="background-color: bisque; border-radius: 10% 20% 40% 50% / 50% 30% 30% 60%; padding: 10px; text-align: center;"> -->
+                          <p class="subtitle is-3" id="text" style="background-color: bisque; border-radius: 10% 20% 40% 50% / 50% 30% 30% 60%; padding: 10px; text-align: center;">Saut d'humeur</p>
+                      <!-- </div> -->
+                        <p class="subtitle is-3" id="text">Perturbation du sommeil</p>
+                      <!-- <div class="cloud" style="background-color: bisque; border-radius: 10% 20% 40% 50% / 50% 30% 30% 60%; padding: 10px; text-align: center;"> -->
+                        <p class="subtitle is-3" id="text" style="background-color: bisque; border-radius: 10% 20% 40% 50% / 50% 30% 30% 60%; padding: 10px; text-align: center;">Décrochage scolaire</p>
+                      <!-- </div> -->
+                        <p class="subtitle is-3" id="text">Dépression</p>
+                      <!-- <div class="cloud" style="background-color: bisque; border-radius: 10% 20% 40% 50% / 50% 30% 30% 60%; padding: 10px; text-align: center;"> -->
+                        <p class="subtitle is-3" id="text" style="background-color: bisque; border-radius: 10% 20% 40% 50% / 50% 30% 30% 60%; padding: 10px; text-align: center;">Stress</p>
+                      <!-- </div> -->
+                  <!-- </ul> -->
+              </div>
+              <figure class="image is-hidden-mobile">
+                  <img id="img" style="margin-right: 1300px; max-width: 200px;" src="./assets/images111.jpeg">
+              </figure>
+            </div>
           </div>
+      </div>
     </div>
 
     <div class="column is-full">
       <div class="card" id="PresBkg">
         <div class="card-content has-text-white">
           <div class="content has-text-centered" id="pas-devenir">
-          <h1 class="title is-1 has-text-centered" id="titre">Et pour ne pas le devenir ?</h1>
-          <figure class="image is-hidden-mobile">
-               <img id="img" style="width: 500px;" src="./assets/images3.jpeg">
-          </figure>
-          <div class="card custom-color mb-5">
-                         <div class="card has-text-centered">
-                                 <h4 class="title is-4 has-text-centered mb-3" id="text">Réfléchissez aux conséquences avant de liker, partager ou publier</h4>
-                         </div>
-                         <div class="card mt-2" style="background-color: #e1d5c7;">
-                                 <h4 class="title is-4 has-text-centered mb-3" id="text">Restez clean</h4>
-                         </div>
-                         <div class="card mt-2" style="background-color: #F4EADF;">
-                                 <h4 class="title is-4 has-text-centered mb-3" id="text">Ayez de l'empathie</h4>
-                         </div>
-                         <div class="card mt-2" style="background-color: #e1d5c7;">
-                                 <h4 class="title is-4 has-text-centered mb-3" id="text">Utilisez positivement les réseaux sociaux</h4>
-                         </div>
-                         <div class="card mt-2" style="background-color: #F4EADF;">
-                                 <h4 class="title is-4 has-text-centered mb-3" id="text">Ne pas faire aux autres ce que l'on ne veut pas que l'on nous fasse</h4>
-                         </div>
-                         <figure class="is-hidden-mobile" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; background-image: url(assets/PrésentationCyber-harcèlement-2.png); background-size: cover;">
-                             <img style="width: 650px; " src="./assets/Presentation-Cyber-harcelement.png">
-                         </figure>
-                     </div>
+            <div class="columns">
+              <div class="column is-2">
+                <figure class="image">
+                  <img style="width:150px; margin-top:-30px; padding-right:15px ; " src="assets/LOGO AEGIS.png" alt="logo">
+                </figure>
+              </div>
+              <div class="column is-8">
+                <h1 class="title is-1 has-text-centered" id="titre">Et pour ne pas le devenir ?</h1>
+              </div>
+            </div>
+            <figure class="image is-hidden-mobile">
+                <img id="img" style="width: 500px;" src="./assets/images3.jpeg">
+            </figure>
+            <div class="card custom-color mb-5">
+                <div class="card has-text-centered">
+                        <h4 class="title is-4 has-text-centered mb-3" id="text">Réfléchissez aux conséquences avant de liker, partager ou publier</h4>
+                </div>
+                <div class="card mt-2" style="background-color: #e1d5c7;">
+                        <h4 class="title is-4 has-text-centered mb-3" id="text">Restez courtois</h4>
+                </div>
+                <div class="card mt-2" style="background-color: #F4EADF;">
+                        <h4 class="title is-4 has-text-centered mb-3" id="text">Ayez de l'empathie</h4>
+                </div>
+                <div class="card mt-2" style="background-color: #e1d5c7;">
+                        <h4 class="title is-4 has-text-centered mb-3" id="text">Utilisez positivement les réseaux sociaux</h4>
+                </div>
+                <div class="card mt-2" style="background-color: #F4EADF;">
+                        <h4 class="title is-4 has-text-centered mb-3" id="text">Ne pas faire aux autres ce que l'on ne veut pas que l'on nous fasse</h4>
+                </div>
+                <figure class="is-hidden-mobile" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; background-image: url(assets/PrésentationCyber-harcèlement-2.png); background-size: cover;">
+                    <img style="width: 650px; " src="./assets/Presentation-Cyber-harcelement.png">
+                </figure>
+            </div>
           </div>
         </div>
       </div>
@@ -386,7 +431,16 @@
       <div class="card" id="PresBkg">
         <div class="card-content has-text-white">
           <div class="content has-text-centered" id="loi">
-              <h1 class="title is-1 has-text-centered" id="titre">Que dit la loi ?</h1>
+            <div class="columns">
+                <div class="column is-2">
+                  <figure class="image">
+                    <img style="width:150px; margin-top:-30px; padding-right:15px ; " src="assets/LOGO AEGIS.png" alt="logo">
+                  </figure>
+                </div>
+                <div class="column is-8">
+                  <h1 class="title is-1 has-text-centered" id="titre">Que dit la loi ?</h1>
+                </div>
+              </div>
               <div class="box" id="boxLaw">
                 <!-- <div class="columns is-multiline is-mobile"> -->
                   <div class="column auto cloud has-background-white " style="opacity: 0.8; border-radius: 10% 20% 40% 50% / 50% 30% 30% 60%; padding: 1px; ">
@@ -429,14 +483,24 @@
       <div class="card" id="PresBkg">
         <div class="card-content has-text-white">
           <div class="content has-text-centered mt-6">
-            <div class="overlay is-absolute is-overlay" style="top: 2%; right: 10%; left: 10%; opacity: 0.8;">
-              <div class="box has-background-grey-light" id="parler">
-                <h1 class="title is-2 has-text-centered" id="titre">A qui en parler ?</h1>
+          <div class="columns">
+            <div class="column is-2" >
+              <figure class="image is-hidden-mobile">
+                <img style="width:150px; margin-top:-65px; margin-left:-70px ; " src="assets/LOGO AEGIS.png" alt="logo">
+              </figure>
+            </div>
+            <div class="column is-8">
+              <div class="overlay is-absolute is-overlay" style="top: 2%; right: 10%; left: 10%; opacity: 0.8;">
+                <div class="box has-background-grey-light" id="parler">
+                  <h1 class="title is-2 has-text-centered" id="titre">A qui en parler ?</h1>
+                </div>
               </div>
             </div>
+          </div>
+
             <div class="box">
               <h5 class="subtitle is-5 has-text-centered" id="text">Si vous êtes ou pensez être victime de harcèlement numérique, n'hésitez pas à en parler à vos parents ou à un proche de confiance.
-                  Vous pouvez également contacter le <span style="color:yellow">3018</span> qui est géré par l'association <a href="https://e-enfance.org/" class="button" style="border: none;"><span style="color:yellow">E-Enfance</span></a>, une application mobile est également téléchargeable.
+                  Vous pouvez également contacter le <span style="color:yellow">3018</span> qui est géré par l'association <a href="https://e-enfance.org/" class="button" style="border: none;"><span style="color:yellow">E-Enfance</span></a>, une application mobile est également téléchargeable sur apple store et play store.
               </h5>
             </div>
             <div class="columns mt-3 flex justify-content-center">
@@ -456,9 +520,19 @@
         <div class="card-content has-text-white">
           <div class="content has-text-centered" id="3018">
             <div class="container has-text-centered" id="container">
-              <div class="cloud" style="background-color: bisque;; border-radius: 10% 20% 40% 50% / 50% 30% 30% 60%; padding: 10px; text-align: center;">
-                <h1 class="title is-1 has-text-centered" id="titre">Le 3018</h1>
-              </div>
+              <div class="columns">
+                  <div class="column is-2">
+                    <figure class="image">
+                      <img style="width:180px; margin-top:-30px; margin-right:15px ; " src="assets/LOGO AEGIS.png" alt="logo">
+                    </figure>
+                  </div>
+                  <div class="column is-8">
+                    <div class="cloud" style="background-color: bisque;; border-radius: 10% 20% 40% 50% / 50% 30% 30% 60%; padding: 10px; text-align: center;">
+                      <h1 class="title is-1 has-text-centered" id="titre">Le 3018</h1>
+                    </div>
+                  </div>
+                </div>
+
               <div class="column is-align-content-end" id="question">
                 <i class="fa-solid fa-question fa-2xl" style="color: #aa7942;"></i>
               </div>
@@ -476,7 +550,7 @@
       </div>
     </div>
 
-    <div class="column is-full">
+    <div class="column is-full is-hidden-mobile">
       <div class="card" id="PresBkg">
         <div class="card-content has-text-white">
           <div class="content has-text-centered">
@@ -488,16 +562,12 @@
                 <h3 class="title is-2 has-text-centered" id="titre">Ce qu'il faut retenir</h3>
               </div>
             </div>
-            <!-- <div class="columns is-mobile ">
-              <div class="column "> -->
-              <!-- </div>
-            </div> -->
             <div class="columns is-centered mt-6">
-                <div class="column is-full mt-6">
-                    <figure class="image  ">
-                        <img style=" width: 60%" src="./assets/Fiche-reflexe-cyberharcelement.jpg.webp" alt="les points à retenir sur le cyber-harcèlement">
-                    </figure>
-                </div>
+              <div class="column is-full mt-6">
+                  <figure class="image  ">
+                      <img style=" width: 70%" src="./assets/Fiche-reflexe-cyberharcelement.jpg.webp" alt="les points à retenir sur le cyber-harcèlement">
+                  </figure>
+              </div>
             </div>
           </div>
         </div>

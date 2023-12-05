@@ -38,7 +38,7 @@ if (!isset($_SESSION['name'])) {
             <div class="column is-centered">
                 <div class="container has-text-centered" id="container">
                     <h1 class="title is-1 has-text-centered is-info" id="titre">Le quiz du cyber-harcèlement </h1>
-                    <p class="subtitle is-5" id="text">Ce petit quiz va vous permettent d'évaluer si vous avez retenus les points clés sur le cyber-harcèlement.</p>
+                    <p class="subtitle is-5" id="text">Ce petit quiz va vous permettre d'évaluer si vous avez retenu les points clés sur le cyber-harcèlement.</p>
                 </div>
             </div>
             <!--Bouton pour changer de page, les ancres sont dans le head-->

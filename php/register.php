@@ -3,7 +3,7 @@
 require_once("connexionBd.php");
 
 // Vérification si les champs demandés dans le formulaire sont bien renseignés
-if (isset($_POST['submit']) && !empty($_POST['name']) && !empty($_POST['password']) && !empty($_POST['city'])
+if (isset($_POST['submit']) && isset($_POST['name']) && !empty($_POST['name']) && !empty($_POST['password']) && isset($_POST['password']) && !empty($_POST['city'])
      && !empty($_POST['postal-code']) && !empty($_POST['email'])) {
         
         if (strlen($_POST['password'] <= 8 )) {
@@ -16,15 +16,15 @@ if (isset($_POST['submit']) && !empty($_POST['name']) && !empty($_POST['password
     $zip = htmlentities(trim($_POST['postal-code']));
 
 // Permet de vérifier si name et pwd existe déjà 
-    $sqlUsername = "SELECT `name`, `password` FROM `user` WHERE `name` = :user"; // requete pour récuperer name et pwd
+    $sqlUsername = "SELECT `email`, `password` FROM `user` WHERE `email` = :email"; // requete pour récuperer email et pwd
     $queryUsername = $db->prepare($sqlUsername); // prépare la requete
     $queryUsername->execute([   // execute la requete
-        "user" => $userN, // associe user à userN, ceci permet d'éviter les attaques par injections sql
+        "email" => $mail, // associe user à userN, ceci permet d'éviter les attaques par injections sql
     ]);
-    $user = $queryUsername->fetch();  // pour récuperer la requete
+    $email = $queryUsername->fetch();  // pour récuperer la requete
 
-    if ($user !== false) { // vérifie si user existe, si non on passe à la suite
-        echo "<p class='usernameUsed'>Nom d'utilisateur déjà utilisé.</p>";
+    if ($email !== false) { // vérifie si email existe, si non on passe à la suite
+        echo "<p class='usernameUsed'>L'adresse e-mail est déjà utilisé.</p>";
     } else {
         $hashedpwd = password_hash($_POST['password'], PASSWORD_DEFAULT); // hash du pwd si user n'existe pas
 
@@ -39,7 +39,7 @@ if (isset($_POST['submit']) && !empty($_POST['name']) && !empty($_POST['password
             "zip" => $zip
         ]);
 
-        if ($user === true) {
+        if ($email === true) {
             $cookie_name = 'registered';
             $cookie_value = $userN;
             setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/");
@@ -50,7 +50,7 @@ if (isset($_POST['submit']) && !empty($_POST['name']) && !empty($_POST['password
                     echo 'une erreur est survenue avec la redirection(header)';
                 }
             }
-        }
+        
 
         if ($queryAdd->rowCount() > 0) {
             if (headers_sent()) {
@@ -68,9 +68,14 @@ if (isset($_POST['submit']) && !empty($_POST['name']) && !empty($_POST['password
         }    
     }
 }
+    // $sqlDate = " ALTER TABLE cyberharcelement.`user`
+    //             ADD DateAjout TIMESTAMP";
+    // $queryD = $db->prepare($sqlDate);
+    // $queryD->execute();
+
+}
 
 ?>
-
 
 <body>
     <style>
